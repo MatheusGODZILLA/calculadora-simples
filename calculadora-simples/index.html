@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculadora de operações</title>
+  </head>
+  <body>
+    <div id="conteiner">
+      <div>
+        <h1 class="title"><strong>Calculadora de Operações</strong></h1>
+      </div>
+      <div>
+        <form class="calcForm" id="calcForm">
+          <label for="operacao">
+            <p>Qual é a operação desejada?</p>
+          </label>
+          <p>
+            <select
+              name="operacao"
+              id="operacao"
+              class="formSelect"
+            >
+              <option disabled selected value="0">
+                --- Escolha uma opção ---
+              </option>
+              <option value="1">Adição</option>
+              <option value="2">Subtração</option>
+              <option value="3">Multiplicação</option>
+              <option value="4">Divisão</option>
+            </select>
+          </p>
+          <label for="num1">
+            <p>Digite o primeiro número:</p>
+          </label>
+          <p>
+            <input
+              type="number"
+              placeholder="0"
+              name="num1"
+              id="num1"
+              class="formInput"
+              required
+            />
+          </p>
+          <label for="num2">
+            <p>Digite o segundo número:</p>
+          </label>
+          <p>
+            <input
+              type="number"
+              placeholder="0"
+              name="num2"
+              id="num2"
+              class="formInput"
+              required
+            />
+          </p>
+          <button type="submit" class="formSubmit">Calcular</button>
+        </form>
+      </div>
+      <div id="resultado">
+        Resultado:
+        <span id="valor"></span>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
